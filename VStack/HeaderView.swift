@@ -46,6 +46,7 @@ struct HeaderView: View {
                     Section {
                         ForEach(self.groupDeviceByName[deviceCompany]!) { devices in
                             Text(devices.name)
+                                .font(.title3)
                         }
                     } header: {
                         Text(deviceCompany)
@@ -53,7 +54,7 @@ struct HeaderView: View {
 
                 }
             }
-            .listStyle(.plain)
+            .listStyle(.sidebar)
             .navigationBarTitle("Header")
         }
     }

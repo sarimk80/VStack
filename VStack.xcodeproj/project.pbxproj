@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2370A127B0FD8A001DD255 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2370A027B0FD8A001DD255 /* ToggleView.swift */; };
 		4A2FE4ED27AA4B6D006169A8 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2FE4EC27AA4B6D006169A8 /* GridView.swift */; };
 		4A49561427A7A52F001C23CD /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49561327A7A52F001C23CD /* TextFieldView.swift */; };
 		4A4B974F279ED868009B16AF /* VStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B974E279ED868009B16AF /* VStackApp.swift */; };
@@ -24,6 +25,7 @@
 		4A715D9627AC5BB300229139 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 4A715D9527AC5BB300229139 /* OrderedCollections */; };
 		4A88D06E27A53F9200385AAB /* PickerVidao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88D06D27A53F9200385AAB /* PickerVidao.swift */; };
 		4A9AF1F227ABB06600602BC0 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AF1F127ABB06600602BC0 /* Animations.swift */; };
+		4AA6F34527B1401800BC2BF6 /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6F34427B1401800BC2BF6 /* ImagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A2370A027B0FD8A001DD255 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		4A2FE4EC27AA4B6D006169A8 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		4A49561327A7A52F001C23CD /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		4A4B974B279ED868009B16AF /* VStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +63,7 @@
 		4A715D8B27AC3EF600229139 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4A88D06D27A53F9200385AAB /* PickerVidao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVidao.swift; sourceTree = "<group>"; };
 		4A9AF1F127ABB06600602BC0 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		4AA6F34427B1401800BC2BF6 /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				4A4B9754279ED86A009B16AF /* Preview Content */,
 				4A9AF1F127ABB06600602BC0 /* Animations.swift */,
 				4A715D8B27AC3EF600229139 /* HeaderView.swift */,
+				4A2370A027B0FD8A001DD255 /* ToggleView.swift */,
+				4AA6F34427B1401800BC2BF6 /* ImagesView.swift */,
 			);
 			path = VStack;
 			sourceTree = "<group>";
@@ -305,8 +311,10 @@
 				4A88D06E27A53F9200385AAB /* PickerVidao.swift in Sources */,
 				4A66ED4327A8F6CE00CFFE6C /* SheetView.swift in Sources */,
 				4A49561427A7A52F001C23CD /* TextFieldView.swift in Sources */,
+				4AA6F34527B1401800BC2BF6 /* ImagesView.swift in Sources */,
 				4A2FE4ED27AA4B6D006169A8 /* GridView.swift in Sources */,
 				4A4B974F279ED868009B16AF /* VStackApp.swift in Sources */,
+				4A2370A127B0FD8A001DD255 /* ToggleView.swift in Sources */,
 				4A9AF1F227ABB06600602BC0 /* Animations.swift in Sources */,
 				4A715D8C27AC3EF600229139 /* HeaderView.swift in Sources */,
 			);
