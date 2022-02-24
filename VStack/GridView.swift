@@ -11,6 +11,7 @@ struct GridView: View {
     
     var colums:[GridItem]=[
         
+        GridItem(.flexible()),
         GridItem(.flexible())
     ]
     
@@ -35,7 +36,7 @@ struct GridView: View {
                 }.padding()
             }
             .navigationViewStyle(.stack)
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar(content: {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     Image(systemName: "note")

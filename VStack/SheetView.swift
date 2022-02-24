@@ -12,25 +12,30 @@ struct SheetView: View {
     @State private var isOpen:Bool=false
     
     var body: some View {
-        VStack {
-            Text("Hello,world!")
-            
-            Button {
-                isOpen.toggle()
-            } label: {
-                Text("Open Sheet")
-                    .foregroundColor(.yellow)
-                    .padding()
-                    .background(Color.black)
-                    .cornerRadius(15)
-            }
+        NavigationView{
+            VStack {
+                Text("Hello,world!")
+                
+                Button {
+                    isOpen.toggle()
+                } label: {
+                    Text("Open Sheet")
+                        .foregroundColor(.yellow)
+                        .padding()
+                        .background(Color.black)
+                        .cornerRadius(15)
+                }
 
+            }
+            .navigationBarTitle("Sheet")
+            .navigationBarTitleDisplayMode(.inline)
+            .sheet(isPresented: $isOpen) {
+                
+            } content: {
+                BottomSheetView(isOpen: $isOpen)
+            }
         }
-        .sheet(isPresented: $isOpen) {
-            
-        } content: {
-            BottomSheetView(isOpen: $isOpen)
-        }
+       
 
 
     }

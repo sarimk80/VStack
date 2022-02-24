@@ -56,6 +56,7 @@ struct HeaderView: View {
             }
             .listStyle(.sidebar)
             .navigationBarTitle("Header")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

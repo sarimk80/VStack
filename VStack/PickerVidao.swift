@@ -25,49 +25,56 @@ struct PickerVideo: View {
     
     var body: some View {
         
-        VStack {
-            
-            Picker("Fruits", selection: $fruits) {
-                ForEach(Fruits.allCases){items in
-                    Text(items.rawValue.capitalized)
-                }
-            }
-            .pickerStyle(.segmented)
-            .padding()
-            
-            switch fruits {
-            case .Apple:
-                Text("Apple")
-                    .padding()
-                    .font(.largeTitle)
-                    .foregroundColor(Color.red)
-                    .background(Color.black)
-                    .cornerRadius(15)
+        NavigationView{
+            VStack {
                 
-            case .Cherry:
-                Text("Cherry")
-                    .padding()
-                    .font(.largeTitle)
-                    .foregroundColor(Color.red)
-                    .background(Color.black)
-                    .cornerRadius(15)
-            case .Mango:
-                Text("Mango")
-                    .padding()
-                    .font(.largeTitle)
-                    .foregroundColor(Color.yellow)
-                    .background(Color.black)
-                    .cornerRadius(15)
-            case .Orange:
-                Text("Orange")
-                    .padding()
-                    .font(.largeTitle)
-                    .foregroundColor(Color.orange)
-                    .background(Color.black)
-                    .cornerRadius(15)
-           
+                Picker("Fruits", selection: $fruits) {
+                    ForEach(Fruits.allCases){items in
+                        Text(items.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding()
+                
+                switch fruits {
+                case .Apple:
+                    Text("Apple")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(Color.red)
+                        .background(Color.black)
+                        .cornerRadius(15)
+                    
+                case .Cherry:
+                    Text("Cherry")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(Color.red)
+                        .background(Color.black)
+                        .cornerRadius(15)
+                case .Mango:
+                    Text("Mango")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(Color.yellow)
+                        .background(Color.black)
+                        .cornerRadius(15)
+                case .Orange:
+                    Text("Orange")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(Color.orange)
+                        .background(Color.black)
+                        .cornerRadius(15)
+               
+                }
+                Spacer()
             }
+            .navigationBarTitle("Picker")
+            .navigationBarTitleDisplayMode(.inline)
         }
+        
+      
     }
 }
 

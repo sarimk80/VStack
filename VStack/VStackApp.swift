@@ -11,7 +11,8 @@ import SwiftUI
 struct VStackApp: App {
     var body: some Scene {
         WindowGroup {
-            HeaderView()
+            RootView()
+            
         }
     }
 }
